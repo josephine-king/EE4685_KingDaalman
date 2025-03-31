@@ -8,6 +8,14 @@
     "type": "Sequence",
     "pretokenizers": [
       {
+        "type": "Split",
+        "pattern": {
+          "String": ":\n"
+        },
+        "behavior": "MergedWithPrevious",
+        "invert": false
+      },
+      {
         "type": "Punctuation",
         "behavior": "Isolated"
       },
