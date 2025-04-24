@@ -1,5 +1,5 @@
-* Environment setup
-** Prerequisites
+*Environment setup
+**Prerequisites
 Install the following:
  - CUDA 12.6 (preferred)
  - Python 3.12.5
