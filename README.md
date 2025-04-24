@@ -1,5 +1,5 @@
-*Environment setup
-**Prerequisites
+# Environment setup
+## Prerequisites
 Install the following:
  - CUDA 12.6 (preferred)
  - Python 3.12.5
@@ -8,15 +8,15 @@ Install the following:
  - Tokenizers
  - Numpy
 
-** Running code
+# Running code
  - Open "miniGPT.ipynb"
  - Run all cells (models are not included in repo, but will be saved locally after training)
  - The notebook has different sections, which define the models, helper functions, a grid search (training) and text generation (based on existing model, if it doesnt exist it will be trained)
 
-** Results and metrics
+# Results and metrics
 The models are primarily compared based on perplexity and number of parameters.
 
-### Results for All 12 Model Configurations (Vocab Sizes: 5k, 10k, 20k)
+## Results for All 12 Model Configurations (Vocab Sizes: 5k, 10k, 20k)
 
 | Model | Perplexity (5k) | Training Loss (5k) | Time/Iter (ms, 5k) | Perplexity (10k) | Training Loss (10k) | Time/Iter (ms, 10k) | Perplexity (20k) | Training Loss (20k) | Time/Iter (ms, 20k) |
 |-------|------------------|---------------------|----------------------|-------------------|----------------------|-----------------------|--------------------|-----------------------|------------------------|
