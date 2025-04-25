@@ -14,7 +14,7 @@ Install the following:
  - The notebook has different sections, which define the models, helper functions, a grid search (training) and text generation (based on existing model, if it doesnt exist it will be trained)
 
 # Results and metrics
-The models are primarily compared based on perplexity (of the validation set), number of parameters, and final (after 1000 iterations) training loss. We explored the effects of tokenizer vocabulary size, embedding dimension, and number of layers on model performance and computation efficiency. Our results (below) indicate that while increasing these parameters generally improves model performance, there can be diminishing returns, overfitting, and increased computational costs if the model parameters are too large for the dataset. This case can especially be seen with 8 decoder layers, where GPT-2 performs good with 12, our models seem to be performing worse.
+The models are primarily compared based on perplexity (of the validation set), number of parameters, and final (after 1000 iterations) training loss. We explored the effects of tokenizer vocabulary size, embedding dimension, and number of layers on model performance and computation efficiency. Our results (below) indicate that while increasing these parameters generally improves model performance, there can be diminishing returns, training instability, and increased computational costs if the model parameters are too large for the dataset. This case can especially be seen with 8 decoder layers, where GPT-2 performs good with 12, our models seem to be performing worse.
 
 ## Results for All 12 Model Configurations (Vocab Sizes: 5k, 10k, 20k)
 
